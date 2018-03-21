@@ -1,15 +1,18 @@
 const express = require('express');
 const path = require('path');
-
 const app = express();
+const bodyParser = require('body-parser');
+const api = require('./api/router');
+
+// Parsers for POST data
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
+// Set our api router
+app.use('/api', api);
 
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
-
-// Put all API endpoints under '/api'
-app.get('/api/data', (req, res) => {
-  res.json({test:1});
-});
 
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
