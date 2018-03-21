@@ -1,3 +1,6 @@
+/**
+ * Schema for a techical skill item
+ */
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 

@@ -1,19 +1,19 @@
 /**
- * Endpoints for certification data
+ * Endpoints for portfolio data
  */
 const express = require('express');
 const router = express.Router();
 const db = require('../mongo/db');
 
-/* GET all certifications. */
+/* GET all portfolio. */
 router.get('/', (req, res) => {
-  db.Certification.find({}, (err, certifications) => {
+  db.Portfolio.find({}, (err, portfolio) => {
     if (err) {
       res.status(500).send(error);
       return;
     }
 
-    res.status(200).json(certifications);
+    res.status(200).json(portfolio);
   });
 });
 

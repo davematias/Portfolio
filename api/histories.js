@@ -1,19 +1,19 @@
 /**
- * Endpoints for certification data
+ * Endpoint for history data
  */
 const express = require('express');
 const router = express.Router();
 const db = require('../mongo/db');
 
-/* GET all certifications. */
+/* GET all history data */
 router.get('/', (req, res) => {
-  db.Certification.find({}, (err, certifications) => {
+  db.History.find({}, (err, histories) => {
     if (err) {
       res.status(500).send(error);
       return;
     }
 
-    res.status(200).json(certifications);
+    res.status(200).json(histories);
   });
 });
 

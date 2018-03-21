@@ -1,3 +1,6 @@
+/**
+ * Schema for the a certification item
+ */
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 

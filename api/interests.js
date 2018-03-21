@@ -1,19 +1,19 @@
 /**
- * Endpoints for certification data
+ * Endpoints for interests data
  */
 const express = require('express');
 const router = express.Router();
 const db = require('../mongo/db');
 
-/* GET all certifications. */
+/* GET all interests. */
 router.get('/', (req, res) => {
-  db.Certification.find({}, (err, certifications) => {
+  db.Interest.find({}, (err, interests) => {
     if (err) {
       res.status(500).send(error);
       return;
     }
 
-    res.status(200).json(certifications);
+    res.status(200).json(interests);
   });
 });
 

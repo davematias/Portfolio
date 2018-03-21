@@ -1,11 +1,10 @@
 /**
- * Schema for the history item
- * The history is a step in one's career, it might be school or work related
+ * Schema for the portfolio item module (past projects)
  */
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const HistorySchema = new Schema({
+const PortfolioSchema = new Schema({
   title: {
     type: String,
     required: true,
@@ -14,18 +13,17 @@ const HistorySchema = new Schema({
   description: {
     type: String,
     required: true
-  },
-  current: Boolean,
-  startDate: {
+  },  
+  finishedDate: {
     type: Date,
     required: true
-  },
-  endDate: Date,
+  },  
   kind: {
     type: String,
     required: true
   },
-  link: String
+  link: String,
+  screenshotLinks: Array
 });
 
-module.exports = mongoose.model('History', HistorySchema);
+module.exports = mongoose.model('Portfolio', PortfolioSchema);
