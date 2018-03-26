@@ -9,3 +9,23 @@
   border-radius: 75px;
   object-fit: cover;
 }
+
+#contact .form button[type="button"] {
+  background: #2dc997;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+}
+
+#contact .form .validation {
+ display: block;
+}
+
+#contact .form #sendmessage {
+  display: block;
+}
+
+#contact .form #errormessage {
+  display: block;
+}

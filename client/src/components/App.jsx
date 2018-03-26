@@ -16,7 +16,7 @@ class App extends Component {
   }
 
   componentWillMount() {
-    fetch(`${API_ROOT}/profiles`)
+    fetch(`${API_ROOT}profiles`)
     .then(response => response.json())
     .then(json => {
       const profile = json[0];
