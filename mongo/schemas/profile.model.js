@@ -10,19 +10,25 @@ const ProfileSchema = new Schema({
     required: true,
     unique: true
   },
-  roles: Array,    
-  kind: {
+  role: {
     type: String,
     required: true
   },
+  photoUrl: String,
+  currentEmployer: String,
+  currentUrl: String,
   location: String,
   locationMapLink: String,
-  topSkills: Array,
-  twitterLink: String,
-  facebookLink: String,
-  linkedinLink: String,
-  googlePlussLink: String,
-  githubLink: String
+  skills: [{ name: String, expert: Boolean }],
+  interests: [],
+  languages: [{ name: String, level: String }],
+  certifications: [],
+  twitterUrl: String,
+  facebookUrl: String,
+  linkedinUrl: String,
+  googlePlusUrl: String,
+  githubUrl: String,
+  cvUrl: String
 });
 
 module.exports = mongoose.model('Profile', ProfileSchema);

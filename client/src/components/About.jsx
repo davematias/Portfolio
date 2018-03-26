@@ -8,33 +8,24 @@ class About extends Component {
           <div className="container">
             <div className="row about-container">
 
-              <div className="col-lg-6 content order-lg-1 order-2">
-                <h2 className="title">Few Words About Us</h2>
+              <div className="col-lg-12 content order-lg-1 order-1">
+                <h2 className="title">About</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  This website was made with <a href="https://expressjs.com/" target="_blank">ExpressJS</a> + <a href="https://www.mongodb.com/" target="_blank">MongoDB</a> for the back-end and <a href="https://reactjs.org/" target="_blank">React</a> + <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> for the front-end.
+                  The server is hosted on <a href="https://dashboard.heroku.com/" target="_blank">Heroku</a> and some files are stored on <a href="https://cloud.google.com/" target="_blank">Google Cloud</a>.
                 </p>
 
-                <div className="icon-box wow fadeInUp">
-                  <div className="icon"><i className="fa fa-shopping-bag"></i></div>
-                  <h4 className="title"><a href="">Eiusmod Tempor</a></h4>
-                  <p className="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-                </div>
+                <p>
+                  The bootstrap template was based on <a href="https://bootstrapmade.com/regna-bootstrap-onepage-template/" target="_blank">Regna</a> and the icons were made by <a href="https://fontawesome.com/" target="_blank">FontAwesome</a> and <a href="https://www.flaticon.com/authors/freepik" target="_blank">Freepik </a>
+                  from <a href="https://www.flaticon.com/" target="_blank">www.flaticon.com</a> (licensed by <a  href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC 3.0 BY</a>)
+                </p>
 
-                <div className="icon-box wow fadeInUp" data-wow-delay="0.2s">
-                  <div className="icon"><i className="fa fa-photo"></i></div>
-                  <h4 className="title"><a href="">Magni Dolores</a></h4>
-                  <p className="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                </div>
-
-                <div className="icon-box wow fadeInUp" data-wow-delay="0.4s">
-                  <div className="icon"><i className="fa fa-bar-chart"></i></div>
-                  <h4 className="title"><a href="">Dolor Sitema</a></h4>
-                  <p className="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-                </div>
+                <p>
+                    Fork it on <a href="https://github.com/davematias/Portfolio" target="_blank">Github!</a>
+                </p>
 
               </div>
 
-              <div className="col-lg-6 background order-lg-2 order-1 wow fadeInRight"></div>
             </div>
 
           </div>

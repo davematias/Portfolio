@@ -10,17 +10,17 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <Header />  
+      <Header />
       <section id="hero">
         <div className="hero-container">
           <img class="profile-img" src="img/profile.png" alt=""/>
           <h1>Full-Stack Developer</h1>
-          <h2>HTML5 - Javascript - NodeJS - C# - .Net - Android</h2>          
+          <h2>HTML5 - Javascript - NodeJS - C# - .Net - Android</h2>
         </div>
       </section>
       <main id="main">
-        <Resumee />    
-        <Portfolio />    
+        <Resumee />
+        <Portfolio />
         <Contact />
         <About/>
       </main>
@@ -31,9 +31,6 @@ class App extends Component {
         <div className="container">
           <div className="copyright">
             &copy; Copyright <strong>David Matias</strong>. All Rights Reserved
-          </div>
-          <div className="credits">        
-            Bootstrap Template by <a href="https://bootstrapmade.com/">BootstrapMade</a>
           </div>
         </div>
       </footer>
