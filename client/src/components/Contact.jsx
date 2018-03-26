@@ -77,10 +77,12 @@ class Contact extends Component {
     })
     .then(response => {
       this.setState({sendDone: true});
+      setTimeout(() => this.setState({sendDone: false}), 3000);
     })
     .catch(error => {
       console.error('error', error);
       this.setState({sendError: true});
+      setTimeout(() => this.setState({sendError: false}), 3000);
     });
   }
 
