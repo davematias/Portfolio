@@ -7,42 +7,13 @@ class Contact extends Component {
         <section id="contact">
           <div className="container wow fadeInUp">
             <div className="section-header">
-              <h3 className="section-title">Contact</h3>
-              <p className="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+              <h3 className="section-title">Contact Me</h3>
+              <p className="section-description">The best way to get hold of me if by using this contact form, i'll try to get back to you within a day</p>
             </div>
           </div>
-          
+
           <div className="container wow fadeInUp">
             <div className="row justify-content-center">
-
-              <div className="col-lg-3 col-md-4">
-
-                <div className="info">
-                  <div>
-                    <i className="fa fa-map-marker"></i>
-                    <p>A108 Adam Street<br/>New York, NY 535022</p>
-                  </div>
-
-                  <div>
-                    <i className="fa fa-envelope"></i>
-                    <p>info@example.com</p>
-                  </div>
-
-                  <div>
-                    <i className="fa fa-phone"></i>
-                    <p>+1 5589 55488 55s</p>
-                  </div>
-                </div>
-
-                <div className="social-links">
-                  <a href="#" className="twitter"><i className="fa fa-twitter"></i></a>
-                  <a href="#" className="facebook"><i className="fa fa-facebook"></i></a>
-                  <a href="#" className="instagram"><i className="fa fa-instagram"></i></a>
-                  <a href="#" className="google-plus"><i className="fa fa-google-plus"></i></a>
-                  <a href="#" className="linkedin"><i className="fa fa-linkedin"></i></a>
-                </div>
-
-              </div>
 
               <div className="col-lg-5 col-md-8">
                 <div className="form">

@@ -9,6 +9,7 @@ class Resumee extends Component {
             <div className="section-header">
               <h3 className="section-title">Services</h3>
               <p className="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+
             </div>
             <div className="row">
               <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
