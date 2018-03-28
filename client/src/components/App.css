@@ -29,3 +29,12 @@
 #contact .form #errormessage {
   display: block;
 }
+
+.portfolio-item img {
+  width: 400px;
+}
+
+.modal-img {
+  width: 100%;
+  margin-bottom: 15px;
+}

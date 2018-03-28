@@ -13,11 +13,7 @@ const PortfolioSchema = new Schema({
   description: {
     type: String,
     required: true
-  },  
-  finishedDate: {
-    type: Date,
-    required: true
-  },  
+  },
   kind: {
     type: String,
     required: true

@@ -21,6 +21,7 @@ class App extends Component {
     .then(json => {
       const profile = json[0];
       this.setState({profile});
+      window.jqueryBinder();
     })
     .catch(error => console.error('error', error));
   }

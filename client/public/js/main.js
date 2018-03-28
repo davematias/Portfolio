@@ -1,4 +1,4 @@
-jQuery(document).ready(function( $ ) {
+window.jqueryBinder = function() {
 
   // Header fixed and Back to top button
   $(window).scroll(function() {
@@ -94,6 +94,15 @@ jQuery(document).ready(function( $ ) {
     }
   });
 
+  // jQuery counterUp
+  $('[data-toggle="counter-up"]').counterUp({
+    delay: 10,
+    time: 1000
+  });
+
+};
+
+window.portfolioBinder = function() {
   // Porfolio filter
   $("#portfolio-flters li").click ( function() {
     $("#portfolio-flters li").removeClass('filter-active');
@@ -109,11 +118,4 @@ jQuery(document).ready(function( $ ) {
       $("#portfolio-wrapper").fadeTo(300, 1);
     }, 300);
   });
-
-  // jQuery counterUp
-  $('[data-toggle="counter-up"]').counterUp({
-    delay: 10,
-    time: 1000
-  });
-
-});
+};
