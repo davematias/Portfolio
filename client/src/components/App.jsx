@@ -48,10 +48,16 @@ class App extends Component {
                   }).sort().join(' - ')
                 }
               </h2>
+              <div className="social">
+                <a href=""><i className="fa fa-twitter"></i></a>
+                <a href=""><i className="fa fa-facebook"></i></a>
+                <a href=""><i className="fa fa-google-plus"></i></a>
+                <a href=""><i className="fa fa-linkedin"></i></a>
+              </div>
             </div>
           </section>
           <main id="main">
-            <Resumee />
+            <Resumee profile={this.state.profile} />
             <Portfolio />
             <Contact />
             <About/>
