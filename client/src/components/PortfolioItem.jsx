@@ -26,7 +26,6 @@ class PortfolioItem extends Component {
        <img src={item.screenshotLinks[0]} alt="" />
        <div className="details">
         <h4>{item.title}</h4>
-        <span>{item.description}</span>
        </div>
         <Modal isOpen={this.state.modal} toggle={this.toggle} className="modal-dialog modal-lg">
           <ModalHeader toggle={this.toggle}>{item.title}</ModalHeader>
