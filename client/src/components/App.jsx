@@ -48,11 +48,12 @@ class App extends Component {
                   }).sort().join(' - ')
                 }
               </h2>
-              <div className="social">
-                <a href=""><i className="fa fa-twitter"></i></a>
-                <a href=""><i className="fa fa-facebook"></i></a>
-                <a href=""><i className="fa fa-google-plus"></i></a>
-                <a href=""><i className="fa fa-linkedin"></i></a>
+              <div id="social">
+                <a href={this.state.profile.twitterUrl} target="_blank"><i className="fa fa-twitter"></i></a>
+                <a href={this.state.profile.facebookUrl} target="_blank"><i className="fa fa-facebook"></i></a>
+                <a href={this.state.profile.googlePlusUrl} target="_blank"><i className="fa fa-google-plus"></i></a>
+                <a href={this.state.profile.linkedinUrl} target="_blank"><i className="fa fa-linkedin"></i></a>
+                <a href={this.state.profile.githubUrl} target="_blank"><i className="fa fa-github"></i></a>
               </div>
             </div>
           </section>

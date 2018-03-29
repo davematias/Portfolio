@@ -2,6 +2,64 @@
   text-align: center;
 }
 
+#resumee {
+  padding: 80px 0 40px 0;
+}
+
+#resumee .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  margin-top: 25px;
+  border: 2px solid #2dc997;
+  color:#2dc997;
+}
+
+#resumee .title, #resumee .icon{
+  color:#2dc997;
+}
+
+#resumee .btn-outline-secondary{
+  margin: 10px;
+}
+
+.education-box {
+  text-align: left;
+}
+
+.education-box .title {
+  margin-bottom: 2px;
+}
+
+.education-box span {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.education-box .un-description, .education-box .un-date-description, .education-box .description {
+  text-align: justify;
+}
+
+.education-box .un-date-description {
+  margin-bottom: 10px;
+}
+
+#hero h2 {
+  margin-bottom: 10px;
+}
+
+#social i {
+  font-size: 22px;
+  margin: 0 5px;
+}
+
 .profile-img {
   width: 150px;
   height: 150px;

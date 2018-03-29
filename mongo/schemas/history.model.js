@@ -11,6 +11,10 @@ const HistorySchema = new Schema({
     required: true,
     unique: true
   },
+  place: {
+    type: String,
+    required: true
+  },
   description: {
     type: String,
     required: true
