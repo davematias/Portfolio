@@ -21,6 +21,7 @@ class Resumee extends Component {
   render() {
     let profile = this.props.profile || null;
     let studyHistories = this.state.histories.filter(history => history.kind === 'study');
+    let workHistories = this.state.histories.filter(history => history.kind === 'work');
 
     return (
       <div>
@@ -34,7 +35,7 @@ class Resumee extends Component {
                   <p className="section-description">
                     Hi! I'm {profile.name} and developing software is both my job and my passion. I'm currently working for <a href={profile.currentUrl} target="_blank">{profile.currentEmployer}</a> in <a href={profile.locationMapLink} target="_blank">{profile.location}</a>
                     <a href={profile.cvUrl} target="_blank" className="btn-get-started">Download Resumee</a>
-                  </p>                  
+                  </p>
                 </div>
 
                 <div className="row">
@@ -46,8 +47,8 @@ class Resumee extends Component {
                         {
                          profile.skills.map((skill, index) => {
                           return <button key={index} type="button" className="btn btn-outline-secondary" disabled>{skill.name}</button>
-                         }) 
-                        }                        
+                         })
+                        }
                       </div>
                     </div>
                   </div>
@@ -59,7 +60,7 @@ class Resumee extends Component {
                         {
                          profile.languages.map((language, index) => {
                           return <h5 key={index}>{language.name}</h5>
-                         }) 
+                         })
                         }
                       </div>
                     </div>
@@ -72,8 +73,8 @@ class Resumee extends Component {
                         {
                          profile.interests.map((interest, index) => {
                           return <button key={index} type="button" className="btn btn-outline-secondary" disabled>{interest}</button>
-                         }) 
-                        }                      
+                         })
+                        }
                       </div>
                     </div>
                   </div>
@@ -85,49 +86,84 @@ class Resumee extends Component {
                         {
                          profile.certifications.map((certification, index) => {
                           return <h5 key={index}>{certification}</h5>
-                         }) 
+                         })
                         }
                       </div>
                     </div>
-                  </div>                                    
-                </div>            
+                  </div>
+                </div>
+                {
+                  workHistories.length === 0 ?
+                  <div></div>
+                  :
+                  <div>
+                    <div className="wow fadeInUp" data-wow-delay="0.2s">
+                      <h3>Work</h3>
+                    </div>
+                    <div id="content" className="row">
+                      <div className="col-lg-12 col-md-12 wow fadeInUp" data-wow-delay="0.4s">
+                        <ul className="timeline">
+                        {
+                          workHistories.map((history, index) => {
+                            const delay = (0.6 + (index*0.1)) + 's';
+                            let startDate = new Date(history.startDate);
+                            startDate = `${startDate.getMonth()+1}/${startDate.getFullYear()}`;
 
+                            let endDate = history.current ? '' : new Date(history.endDate);
+                            if (endDate) {
+                              endDate = ` - ${endDate.getMonth()+1}/${endDate.getFullYear()}`;
+                            }
+                            return <li key={index} className="event wow fadeInUp" data-wow-delay={delay}>
+                              <h3>{history.title}</h3>
+                              <p>{history.place}</p>
+                              <p>{startDate}{endDate}</p>
+                              <p className="description" >{history.description}</p>
+                            </li>
+                          })
+                        }
+                      </ul>
+                    </div>
+                  </div>
+                  </div>
+                }
                 {
                   studyHistories.length === 0 ?
                   <div></div>
                   :
                   <div>
-                    <div><h3>Education</h3></div>
-                    <div className="row">                                    
+                    <div className="wow fadeInUp" data-wow-delay="0.2s">
+                      <h3>Education</h3>
+                    </div>
+                    <div className="row">
                     {
                       studyHistories.map((history, index) => {
-                        const delay = (0.2 + (index*0.1)) + 's';
+                        const delay = (0.4 + (index*0.1)) + 's';
                         return <div key={index} className="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay={delay}>
-                          <div className="education-box box">                      
+                          <div className="education-box box">
                             <h4 className="title">{history.title}</h4>
                             <div className="un-description">
-                              {history.place}                              
+                              {history.place}
                             </div>
                             <div className="un-date-description">
                               {
-                                new Date(history.startDate).getFullYear()                                
-                              } 
+                                new Date(history.startDate).getFullYear()
+                              }
                               <span>-</span>
                               {
-                                new Date(history.endDate).getFullYear()                                
+                                new Date(history.endDate).getFullYear()
                               }
                             </div>
                             <p className="description">
                               {history.description}
                             </p>
                           </div>
-                        </div>                                    
+                        </div>
                       })
-                    }                  
-                    </div>       
+                    }
+                    </div>
 
                   </div>
-                }                
+                }
               </div>
             </section>
           </div>

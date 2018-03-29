@@ -7,7 +7,7 @@ const db = require('../mongo/db');
 
 /* GET all history data */
 router.get('/', (req, res) => {
-  db.History.find({}, (err, histories) => {
+  db.History.find({}).sort({ startDate : -1}).exec((err, histories) => {
     if (err) {
       res.status(500).send(error);
       return;
