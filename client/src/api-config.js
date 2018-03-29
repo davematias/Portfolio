@@ -2,8 +2,8 @@ let backendHost;
 
 const hostname = window && window.location && window.location.hostname;
 
-if(hostname === 'davematiasei.xyz') {
-  backendHost = 'http://davematiasei.xyz';
+if(hostname === 'davematiasei.xyz' || hostname === 'www.davematiasei.xyz') {
+  backendHost = 'http://www.davematiasei.xyz';
 } else if(hostname === 'davepersonalsite.herokuapp.com') {
   backendHost = 'https://davepersonalsite.herokuapp.com';
 } else {
