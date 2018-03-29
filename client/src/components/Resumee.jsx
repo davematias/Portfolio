@@ -32,8 +32,10 @@ class Resumee extends Component {
               <div className="container wow fadeIn">
                 <div className="section-header">
                   <h3 className="section-title">Resumee</h3>
-                  <p className="section-description">
+                  <p className="nopad section-description">
                     Hi! I'm {profile.name} and developing software is both my job and my passion. I'm currently working for <a href={profile.currentUrl} target="_blank">{profile.currentEmployer}</a> in <a href={profile.locationMapLink} target="_blank">{profile.location}</a>
+                  </p>
+                  <p>
                     <a href={profile.cvUrl} target="_blank" className="btn-get-started">Download Resumee</a>
                   </p>
                 </div>
